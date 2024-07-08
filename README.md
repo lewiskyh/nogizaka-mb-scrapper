@@ -53,6 +53,8 @@ To run this project, you will need to install some Python packages and set up Mo
 
 ## Usage
 
-1. To run the script by executing:
+To run the script by executing:
    ```bash
    python fetch-and-save-todb.py
+   ```
+This will start the scraping process, and the scraped data will be stored in your MongoDB database. You will then be able to view the data in your MongoDB database by accessing your MongoDB Atlas cluster.
