@@ -41,7 +41,7 @@ To run this project, you will need to install some Python packages and set up Mo
    ```bash
    pip3 install -r requirements.txt
 
-## Configuration
+### Configuration
 
 1. Create a '.env' file in the project root direcdtory
 
