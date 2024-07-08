@@ -31,7 +31,7 @@ To run this project, you will need to install some Python packages and set up Mo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-github-username>/nogizaka46-scraper.git
+   git clone https://github.com/lewiskyh/nogizaka-mb-scrapper.git
 
 2. Nagivate to the project directory:
    ```bash
