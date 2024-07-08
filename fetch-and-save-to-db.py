@@ -36,15 +36,26 @@ def save_to_mongodb (data):
     db = client[DB_NAME]
     collection = db[COLLECTION_NAME]
 
-    try:
-        # Insert data into MongoDB
-        if isinstance(data, list):
-            collection.insert_many(data)
-        else:
-            collection.insert_one(data)
-        print("Data successfully saved to MongoDB!")
-    except Exception as e:
-        print(f"An error occurred while saving data to MongoDB: {e}")
+    for member in data['data']:
+        member_data = {
+            'code': member['code'],
+            'name': member['name'],
+            'english_name': member.get('english_name', ''),
+            'kana': member.get('kana', ''),
+            'category': member.get('cate', ''),
+            'image_url': member.get('img', ''),
+            'profile_link': member.get('link', ''),
+            'pick': member.get('pick', ''),
+            'god': member.get('god', ''),
+            'under': member.get('under', ''),
+            'birthday': member.get('birthday', ''),
+            'blood_type': member.get('blood_type', ''),
+            'constellation': member.get('constellation', ''),
+            'graduation': member.get('graduation', 'NO'),
+            'groupcode': member.get('groupcode', ''),
+        }
+        collection.insert_one(member_data)
+    print("Data successfully loaded to MongoDB")
 
 
 def main():
