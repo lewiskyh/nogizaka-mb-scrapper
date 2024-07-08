@@ -35,7 +35,7 @@ To run this project, you will need to install some Python packages and set up Mo
 
 2. Nagivate to the project directory:
    ```bash
-   cd nogizaka-mb-scraper
+   cd nogizaka-mb-scrapper
    
 3. Install the Python packages:
    ```bash
